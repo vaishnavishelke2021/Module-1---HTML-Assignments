@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            background-color: black;
+            color: aliceblue;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .container {
+            width: 52%;
+            height: 800px;
+            margin: auto;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            padding-top: 40px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assignment 5 <br>Create employee registration webpage using HTML form objects</h1>
+    <div class="container">
+        <form action="abc.php" style="margin:auto;">
+            <p>
+                <label for="FirstName" requied>First Name </label>
+                <input type="text" id="FirstName"> <br>
+            </p>
+            <p>
+                <label for="LastName" requied>Last Name </label>
+                <input type="text" id="LastName"> <br>
+            </p>
+
+            <p>
+                <label for="Email" required>Enter Email </label>
+                <input type="email" id="Email"> <br>
+            </p>
+
+            <p>
+                <label for="MobileNumber" requied>Mobile Number </label>
+                <input type="number" id="MobileNumber"> <br>
+            </p>
+
+            <p>
+                <label for="city">City : </label>
+                <select name="city" id="city">
+                    <option value="">Select City</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="MP">MP</option>
+                    <option value="Haidrabad">Haidrabad</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="Gender">Gender : </label>
+                <input type="radio" id="male" name="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="other" value="other">
+                <label for="other">Other</label> <br>
+            </p>
+
+            <p>
+                <label for="Degree">Interest :</label>
+                <input type="checkbox" name="WebDevlopment" id="WebDevlopment" value="WebDevlopment">
+                <label for="WebDevlopment">Web Devlopment</label>
+                <input type="checkbox" name="CloudComputing" id="CloudComputing" value="CloudComputing">
+                <label for="CloudComputing">Cloud Computing</label>
+                <input type="checkbox" name="DBMS" id="DBMS" value="DBMS">
+                <label for="DBMS">DBMS</label>
+                <input type="checkbox" name="SoftwareDevelopment" id="SoftwareDevelopment" value="SoftwareDevelopment">
+                <label for="SoftwareDevelopment">Software Development</label> <br>
+                
+            </p>
+
+            <p>
+                <label for="date">Select Date for training session : </label>
+                <select name="date" id="date">
+                    <option value="">Select Date</option>
+                    <option value="Dec 1, 2022">Dec 1, 2022</option>
+                    <option value="Jan 1, 2023">Jan 1, 2023</option>
+                    <option value="Feb 1, 2023">Feb 1, 2023</option>
+                    <option value="Mar 1, 2023">Mar 1, 2023</option>
+                    <option value="Apr 1, 2023">Apr 1, 2023</option>
+                </select>
+            </p>
+
+            <hr>
+
+            <p>
+                <label for="Msg">Write your message :</label><br>
+                <textarea name="" id="Msg" cols="55" rows="10" style="margin-top:15px;"></textarea>
+            </p>
+
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
